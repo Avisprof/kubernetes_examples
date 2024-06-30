@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fastapi-ingress
+  labels:
+    name: fastapi-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: avisprof.local
+    http:
+      paths:
+      - pathType: Prefix
+        path: /server
+        backend:
+          service:
+            name: fastapi-service
+            port: 
+              number: 80
