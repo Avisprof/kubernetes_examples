@@ -14,4 +14,4 @@
 
 
 4. Check deployment with the browser:
-![02_localhost.png](./pics/02_localhost.png)</br>
+<br>![02_localhost.png](./pics/02_localhost.png)</br>
